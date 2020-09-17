@@ -1,0 +1,26 @@
+@import "../../../styles/base/_colors", "../../../styles/base/_font.sass", "../../../styles/base/_typography.sass"
+
+
+.stat-highlight-boxes
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  .stat-highlight-box
+    border-bottom: 0.1875em solid RGBA(0,0,0,0.3)
+    border-radius: 0.25em
+    color: $white
+    margin-top: 1.25em
+    min-width: 10.5em
+    padding: 1em 1.25em
+    &.blue
+      background-color: $blue
+    &.purple
+      background-color: $purple
+    &.green
+      background-color: $green
+    &.red
+      background-color: $red
+    &.orange
+      background-color: $orange
+    &.gray
+      background-color: $gray

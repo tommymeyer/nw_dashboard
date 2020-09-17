@@ -1,0 +1,115 @@
+@import "../../styles/base/_colors", "../../styles/base/_font.sass", "../../styles/base/_typography.sass"
+
+
+.assets-and-detection-container
+  display: grid
+  grid-template-columns: 1fr
+  gap: 0
+  @media screen and ( min-width: 61.25rem )
+    grid-template-columns: 1fr 1fr
+    gap: 1.5em
+
+.asset-list-headings, .asset-list-item
+  align-items: center
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  padding: 0 0.5em
+
+.asset-list-headings, .detection-list-headings
+  color: #A0A0A0
+  margin-bottom: 0.4375em
+  text-transform: uppercase
+  li.asset-list-heading:last-of-type
+    margin-right: 0.25em
+
+.detection-list-headings, .detection-list-item
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  @media screen and ( min-width: 37.75rem )
+    grid-template-columns: 5.714285714em 10em 1fr 2fr
+    gap: 1em
+.detection-list-headings
+  font-size: 0.875em
+  .status-heading
+    margin-left: 1.285714286em
+  .detected-heading
+    justify-self: left
+  @media screen and ( min-width: 37.75rem )
+    padding-right: 1.142857143em
+    padding-left: 1.142857143em
+    .detected-heading
+      justify-self: center
+      margin-left: 1em
+.detection-list-item
+  align-items: center
+  @media screen and ( min-width: 37.75rem )
+    padding: 1.428571429em 1.142857143em
+
+.asset-list
+  .asset-list-item, .detection-list-item
+    border-top: 0.0625em solid #F0F0F0
+    padding-top: 1.25em
+    padding-bottom: 1.25em
+    .item
+      color: #838383
+      &.energy-color
+        color: $red
+      a
+        background-color: #838383
+        border: 0.0667em solid $gray
+        border-radius: 0.133em
+        color: $white
+        font-size: 0.9375rem
+        padding: 0.4667em 0.6667em
+        text-decoration: none
+        text-transform: uppercase
+        &:active
+          background-color: darken(#838383, 10%)
+
+.timeframe-heading, .timeframe-container
+  @media screen and ( min-width: 37.75rem )
+    grid-column: 4 / 5
+.timeframe-heading
+  @media screen and ( min-width: 37.75rem )
+    margin-left: 1.714285714em
+
+.detection-list-item
+  .item
+    &.Active, &.Inactive, &.Archived
+      border-radius: 1.714285714em
+      color: $white
+      font-size: 0.875em
+      padding: 0.285714286em 0
+      text-transform: uppercase
+      width: 5.714285714em
+    &.Active
+      background-color: $red
+    &.Inactive
+      background-color: $gray
+    &.Archived
+      background-color: #EBEBEB
+      border: 0.071428571em solid #D9D9D9
+      color: #9E9E9E
+  .timeframe-container
+    p + p
+      margin-top: 0.5em
+    p, span
+      text-transform: uppercase
+    .timeframe-start-title
+      margin-right: 0.25em
+    .timeframe-end-title
+      margin-right: 1em
+    span
+      &.start-date
+        color: #B8B8B8
+    a
+      &.end-link
+        background-color: transparent
+        border: none
+        color: #1896B1
+        display: inline-block
+        font-size: 1em
+        padding: 0
+        text-decoration: underline
+        &:active
+          background-color: transparent

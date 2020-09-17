@@ -1,0 +1,37 @@
+@import "../../styles/base/_colors", "../../styles/base/_font.sass", "../../styles/base/_typography.sass"
+
+
+.dashboard-info
+  background-color: #F5FDFF
+  border: 0.0625em solid #DEF0F4
+  margin-bottom: 1.25em
+  padding: 1.5em
+  @media screen and ( min-width: 28.75rem )
+    padding: 1.875em
+  h1
+    color: $blue
+  .location-info
+    color: #6F6F6F
+    margin-top: 0.875em
+    max-width: 12.5em
+    @media screen and ( min-width: 28.75rem )
+      display: flex
+      max-width: 20em
+    .time-and-place
+      border-bottom: 0.0625em solid #B1DDE8
+      margin: 0 0 0.625em 0
+      padding: 0 0 0.625em 0
+      @media screen and ( min-width: 28.75rem )
+        border-right: 0.0625em solid #B1DDE8
+        border-bottom: none
+        margin: 0 1.25em 0 0
+        padding: 0 1.25em 0 0
+      .place
+        margin: 0 0 0.5em 0
+        @media screen and ( min-width: 28.75rem )
+          margin: 0 0 0.625em 0
+    .type-and-number-of-assets
+      .type-of-assets
+        margin: 0 0 0.5em 0
+        @media screen and ( min-width: 28.75rem )
+          margin: 0 0 0.625em 0
