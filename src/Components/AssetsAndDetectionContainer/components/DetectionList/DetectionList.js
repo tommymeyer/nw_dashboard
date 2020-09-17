@@ -66,7 +66,7 @@ export default function DetectionList() {
 
           <div className="timeframe-container">
             <p className="item small font-bold timeframe-start-title">Start: <span className="start-date small font-bold">{listItem.timeframe[0].start}</span></p>
-            <p className="item small font-bold timeframe-end-title">End: <a href="#" className="font-bold end-link">{listItem.timeframe[0].end}</a></p>
+            <p className="item small font-bold timeframe-end-title">End: <a href="/" className="font-bold end-link">{listItem.timeframe[0].end}</a></p>
           </div>
         </div>
       );

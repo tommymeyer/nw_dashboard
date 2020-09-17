@@ -1,7 +1,7 @@
 import React from 'react';
 import "./SidebarIcons.sass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faUserAstronaut, faBell, faBookmark, faTachometerAlt, faFileAlt, faMapMarkerAlt, faUpload, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faUserAstronaut, faBell, faBookmark, faTachometerAlt, faFileAlt, faMapMarkerAlt, faUpload, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function SidebarIcons({ handleNavClick }) {

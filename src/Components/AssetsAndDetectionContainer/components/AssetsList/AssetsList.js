@@ -43,7 +43,7 @@ export default function AssetsList() {
           <p className="item jl">{listItem.asset}</p>
           <p className="item jc">{listItem.capacity}</p>
           <p className="item jc energy-color">{listItem.energy}</p>
-          <p className="item jr"><a href="#" className="font-bold">{listItem.view}</a></p>
+          <p className="item jr"><a href="/" className="font-bold">{listItem.view}</a></p>
         </li>
       );
     });

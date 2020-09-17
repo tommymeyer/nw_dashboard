@@ -9,7 +9,7 @@ export default function TopBar() {
   return(
     <div className="top-bar">
       <p className="breadcrumbs p">
-        <a href="#">Site</a> / <a href="#">Performance</a></p>
+        <a href="/">Site</a> / <a href="/">Performance</a></p>
 
       <div className="time-and-refresh-container">
         <div className="timeframe-container common-radius">
